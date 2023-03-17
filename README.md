@@ -5,9 +5,9 @@ Refer to the other .md files for examples
 
 We'll try to follow the format of
 
-> Command Name
+# Command Name
 
-What the command does
+> What the command does
 
 `Example syntax or parameterize`
 
