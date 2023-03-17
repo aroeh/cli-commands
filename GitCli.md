@@ -1,4 +1,4 @@
-# Clone Repository
+# Clone
 
 > Exactly as it sounds.  Clones the specified repository to a workstation
 
@@ -8,7 +8,7 @@
 git clone https://github.com/aroeh/cli-commands.git
 ```
 
-# Retrieve changes
+# Pull
 
 > Gets the latest changes from the origin
 
@@ -18,7 +18,7 @@ git clone https://github.com/aroeh/cli-commands.git
 git pull
 ```
 
-# List Branches
+# Branch
 
 > Lists the branches using the specified options if provided
 - not providing options will list all local branches
@@ -35,6 +35,36 @@ git branch -r
 ```
 ```
 git branch -a
+```
+
+## Create New Branch
+
+> Creates a new local branch using another specified local branch as the source
+
+`git branch -m <source-branch> <new-branch>`
+
+```
+git branch -m main feature-branch
+```
+
+## Unset Branch Origin
+
+> Removes remote branch association from the local branch.  Only use if the branch is based on a different origin branch
+
+`git branch --unset-upstream`
+
+```
+git branch --unset-upstream
+```
+
+## Delete Local Branch
+
+> Deletes the specified branch from the local workstation
+
+`git branch -D <branch>`
+
+```
+git branch -D feature-branch
 ```
 
 # Checkout
