@@ -1,3 +1,7 @@
+# Redis CLI Documentation
+[Redis Commands](https://redis.io/commands)
+
+
 # Info
 
 See stats and information for the current redis instance
