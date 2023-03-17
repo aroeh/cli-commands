@@ -1,6 +1,6 @@
 # Clone
 
-> Exactly as it sounds.  Clones the specified repository to a workstation
+Exactly as it sounds.  Clones the specified repository to a workstation
 
 `git clone <repo>`
 
