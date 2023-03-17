@@ -122,6 +122,47 @@ git commit -m "commit comment"
 git push
 ```
 
+## Push Local Branch
+
+> Push local branch changes to a specified remote repository.
+- Including the branch name will push the local branch to that remote branch
+
+`git push origin HEAD`
+
+```
+git push origin HEAD
+```
+
+- Excluding the branch will push the local branch to the remote branch with the same name
+
+`git push origin HEAD`
+
+`git push origin HEAD:<branch>`
+
+```
+git push origin HEAD:main
+```
+
+## Push Branch Origin
+
+> Pushes the changes for the specified branch to the remote server.  If deleting a branch locally, this command will delete teh branch on the remote server
+
+`git push origin :<branch>`
+
+```
+git push origin :feature-branch
+```
+
+## Push and Set Origin
+
+> Pushes the current local branch to the remote server branch and sets the branch origin to the specified branch name
+
+`git push --set-upstream origin <branch>`
+
+```
+git push --set-upstream origin main
+```
+
 # Merge
 
 > Merges changes from the specified branch into the branch that is currently checked out
@@ -152,82 +193,22 @@ git stash
 git stash pop
 ```
 
-# Command Name
+# Config
 
-> What the command does
+> Lists global git settings on the PC
 
-`Example syntax or parameterize`
-
-```
-Example command for copy and paste
-```
-
-# Command Name
-
-> What the command does
-
-`Example syntax or parameterize`
+`git config --global --list`
 
 ```
-Example command for copy and paste
+git config --global --list
 ```
 
-# Command Name
+# Default Branch
 
-> What the command does
+> Sets the default branch to the specified name
 
-`Example syntax or parameterize`
-
-```
-Example command for copy and paste
-```
-
-# Command Name
-
-> What the command does
-
-`Example syntax or parameterize`
+`git config --global init.defaultbranch <branch>`
 
 ```
-Example command for copy and paste
-```
-
-# Command Name
-
-> What the command does
-
-`Example syntax or parameterize`
-
-```
-Example command for copy and paste
-```
-
-# Command Name
-
-> What the command does
-
-`Example syntax or parameterize`
-
-```
-Example command for copy and paste
-```
-
-# Command Name
-
-> What the command does
-
-`Example syntax or parameterize`
-
-```
-Example command for copy and paste
-```
-
-# Command Name
-
-> What the command does
-
-`Example syntax or parameterize`
-
-```
-Example command for copy and paste
+git config --global init.defaultbranch main
 ```
