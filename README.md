@@ -7,7 +7,9 @@ We'll try to follow the format of
 
 # Command Name
 
-> What the command does
+What the command does
+
+> Note as needed and where
 
 `Example syntax or parameterize`
 
