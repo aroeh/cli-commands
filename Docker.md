@@ -176,6 +176,70 @@ docker logs -f my_container
 
 ## Networking
 
+### List Networks
+
+Lists available networks configured in Docker
+
+`docker network ls`
+
+```
+docker network ls
+```
+
+### Inspect
+
+Inspects the specified docker newtork to show details
+
+`docker network inspect <name>`
+
+```
+docker network inspect my_network
+```
+
+### Create
+
+Create a new network in Docker
+
+`docker network create <name>`
+
+> By default docker will create networks using the bridge network driver.  Other network drivers can be used
+
+`docker network -d <driver> <name>`
+
+```
+docker network -d bridge my_network
+```
+
+### Connect
+
+Adds the specified container to a docker network
+
+`docker network connect <network-name> <container>`
+
+```
+docker network connect my_network my_container
+```
+
+### Disconnect
+
+Removes the specified container from a docker network
+
+`docker network disconnect <network-name> <container>`
+
+```
+docker network disconnect my_network my_container
+```
+
 ## Exec
 
-# Docker Compose
+Allow for commands to be run within the container
+
+> For a full list of options refer to [Docker Exec](https://docs.docker.com/engine/reference/commandline/exec/)
+
+`docker exec [options] <container> <command>`
+
+> This example will get a value from redis cache
+
+```
+docker exec -i my_container redis-cli get mykey
+```
